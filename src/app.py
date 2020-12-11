@@ -2,11 +2,11 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
+# Route to add two numbers
 @app.route('/add-two-nums', methods=["POST"])
 def add_two_nums():
 	# Extract x, y from the posted data
 	dataDict=request.get_json()
-
 
 	# Add x+y and store it
 	z = dataDict["x"] + dataDict["y"]
@@ -14,6 +14,7 @@ def add_two_nums():
 	# Prepare json to return the values as 'z'
 	return jsonify({"z": z})
 
+# Route to return dummy-code
 @app.route('/')
 def hello_world():
 	return "Hello World from inside a docker container that is hosted in docker-compoes."
