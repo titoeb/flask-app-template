@@ -7,6 +7,6 @@ This is my Flask template that I use to build flask based web-services. It has a
 In the following table you should document the resources of your rest-api to make it easier to understand:
 | Resource | Method | Path | Used to | Parameters | error-codes |
 | --- | --- | --- | --- | --- | --- |
-| + | POST | /add | Add two numbers | x:int, y:int | 200 OK, 301 Missing parameter |
+| Show the resource | GET/POST/PUT/DELETE | /? | What this resource does | Expected parameters with types | All possible error codes with explanations |
 
 Happy Hacking!
